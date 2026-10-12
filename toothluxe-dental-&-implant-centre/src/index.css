@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #120a17;
+  --color-primary-container: #29202d;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #938697;
+  --color-primary-fixed: #edddf0;
+  --color-primary-fixed-dim: #d1c2d3;
+  --color-secondary: #5d5e63;
+  --color-secondary-container: #dfdfe5;
+  --color-on-secondary-container: #616268;
+  --color-secondary-fixed: #e2e2e8;
+  --color-secondary-fixed-dim: #c6c6cc;
+  --color-secondary-fixed-variant: #45474c;
+  --color-tertiary: #0e0d11;
+  --color-tertiary-container: #242327;
+  --color-surface: #faf9f7;
+  --color-surface-dim: #dadad8;
+  --color-surface-bright: #faf9f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f3f1;
+  --color-surface-container: #efeeec;
+  --color-surface-container-high: #e9e8e6;
+  --color-surface-container-highest: #e3e2e0;
+  --color-surface-tint: #665a6a;
+  --color-background: #faf9f7;
+  --color-on-surface: #1a1c1b;
+  --color-on-surface-variant: #4a454b;
+  --color-outline: #7b757b;
+  --color-outline-variant: #ccc4cb;
+  --color-plum: #29202d;
+  --color-plum-dark: #120a17;
+  --color-pearl: #faf9f7;
+  --color-silver: #b8b8be;
+  --color-graphite: #343238;
+
+  --font-serif: "Bodoni Moda", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-on-surface);
+    background-color: var(--color-background);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: "Bodoni Moda", Georgia, serif;
+  }
+}
+
+/* Typography tokens matching Stitch approved design */
+.font-display-hero {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(38px, 5.5vw, 68px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-lg {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.font-headline-md {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(22px, 3vw, 28px);
+  line-height: 1.28;
+  letter-spacing: 0em;
+}
+
+.font-headline-sm {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(19px, 2.5vw, 22px);
+  line-height: 1.3;
+  letter-spacing: 0em;
+}
+
+.font-title-md {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+
+.font-body-lg {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.font-body-md {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.font-body-sm {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.font-label-caps {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.font-label-md {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+/* Custom focus ring matching brand guidelines */
+*:focus-visible {
+  outline: 2px solid #29202D;
+  outline-offset: 2px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "TOOTHLUXE Dental & Implant Centre",
+  "description": "Architectural dental medicine and implant centre in Kudasan, Gandhinagar, Gujarat. Thoughtful restorative care, digital CBCT planning, and serene clinical excellence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
